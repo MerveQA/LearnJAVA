@@ -1,0 +1,26 @@
+package src.j23_Varargs_StringBuilder.StringBuilder;
+
+public class C3_SB_Soru04 {
+
+	public static void main(String[] args) {
+		
+		int total=0;
+        StringBuilder letters=new StringBuilder("abcdefg");
+        total+=letters.substring(1,2).length();             // length=1
+        total+=letters.substring(6,6).length();             // length= 0
+        total+=letters.substring(6,5).length();             // RTE
+        System.out.println(total);                          //
+
+        int total1=0;
+        StringBuilder letters1=new StringBuilder("abcdefg");
+        total1+=letters1.substring(6,6).length();             // length= 0
+        System.out.println("total1 = " + total1);
+        total1+=letters1.substring(1,2).length();             // length=1
+        System.out.println("total1 = " + total1);
+        total1+=letters1.substring(6,5).length();             // RTE
+        System.out.println(total1);                          //
+
+
+	}
+
+}
