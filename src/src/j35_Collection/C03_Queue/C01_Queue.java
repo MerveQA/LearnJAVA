@@ -33,12 +33,18 @@ public class C01_Queue {
 
         // peek();
         System.out.println("q1.peek() = " + q1.peek()); // Cebrail
+        System.out.println();
+        System.out.println();
+        System.out.println();
 
         //remove();
-        //System.out.println("q1.remove() = " + q1.remove()); // Cebrail
-
+        System.out.println(q2);
+        System.out.println("q1.remove() = " + q2.remove()); //
+        System.out.println();
+        System.out.println();
+        System.out.println();
         //poll();
-        System.out.println("q1.poll() = " + q1.poll()); // Cebrail
+       // System.out.println("q1.poll() = " + q1.poll()); // Cebrail
 
         /*
         peek() -> copy-paste gibi ilk elemani return eder ama silmez.
@@ -62,5 +68,14 @@ public class C01_Queue {
         TRICK: offer ve add farki -> eger queue coll. eleman kisitlamasi yapilmis ise add methodu Exception firlatir.
         Offer ise true/false return eder.
          */
+
+
+        Queue<String> q = new PriorityQueue<>();
+
+        q.add("Teddy");
+        q.add("Mark");
+        q.add("Leo");
+
+        System.out.println(q);
     }
 }

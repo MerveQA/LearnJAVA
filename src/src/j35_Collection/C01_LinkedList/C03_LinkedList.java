@@ -54,5 +54,20 @@ public class C03_LinkedList {
         //ll1.remove(33);
 
 
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        linkedList.add("A");
+
+        linkedList.add("B");
+
+        linkedList.add("C");
+
+        linkedList.add("B");
+
+        linkedList.add("D");
+
+
+
+
     }
 }
